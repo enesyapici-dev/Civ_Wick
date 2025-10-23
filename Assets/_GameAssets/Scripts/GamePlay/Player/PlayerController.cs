@@ -1,15 +1,18 @@
+using System;
 using System.ComponentModel;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public event Action OnPlayerJumped;
     [Header("References")]
-    [SerializeField] private GameObject orientationTransform;
+    [SerializeField]
+    private GameObject orientationTransform;
 
     [Header("Movement Settings")]
-    [SerializeField] private float movementSpeed;
+    [SerializeField]
+    private float movementSpeed;
     [SerializeField] private KeyCode movementKey;
 
     [Header("Jumping Settings")]
@@ -149,6 +152,7 @@ public class PlayerController : MonoBehaviour
 
     private void SetPlayerJumping()
     {
+        OnPlayerJumped?.Invoke();
         playerRigidbody.linearVelocity = new Vector3(playerRigidbody.linearVelocity.x, 0f, playerRigidbody.linearVelocity.z);
         playerRigidbody.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
