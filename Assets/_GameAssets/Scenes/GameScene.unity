@@ -187,8 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 705171829}
-  movementDecreaseSpeed: -25
-  resetBoostDuration: 5
+  wheatDesignSO: {fileID: 11400000, guid: 6759707eb7f40e04ca40e6ecced51e2b, type: 2}
 --- !u!1 &140677325
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,8 +704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 705171829}
-  jumpIncreaseForce: 8
-  resetBoostDuration: 5
+  wheatDesignSO: {fileID: 11400000, guid: c3c1d4e72f9bb054189dbd1045ec6bd2, type: 2}
 --- !u!1 &705171825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,8 +1456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 705171829}
-  movementIncreaseSpeed: 15
-  resetBoostDuration: 5
+  wheatDesignSO: {fileID: 11400000, guid: 53bd59747c4150a4cb050c19bcc6ae99, type: 2}
 --- !u!1 &1976486808
 GameObject:
   m_ObjectHideFlags: 0
